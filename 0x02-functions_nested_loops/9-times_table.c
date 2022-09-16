@@ -25,7 +25,7 @@ void times_table(void)
 	prod = num * mult;
 	}
 
-	/**
+	/*
 	 * put space if product is a single number
 	 * place the first digit if its two numbers
 	 */
@@ -35,9 +35,9 @@ void times_table(void)
 	}
 	else
 	{
-	_putchar((prod / 10_ + 48); /*get the first digit*/
+	_putchar((prod / 10) + 48); /*get the first digit*/
 	
 	_putchar((prod % 10) +48); /*get the second digit*/
 	}
 	_putchar('\n');
-}
+	}
