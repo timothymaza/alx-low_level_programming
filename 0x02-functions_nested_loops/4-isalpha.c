@@ -16,9 +16,9 @@ int _isalpha(int c)
 	if (i > 0)
 	{
 	return (1);
+	}
 	else
 	{
 	return (0);
-	}
 	}
 }
