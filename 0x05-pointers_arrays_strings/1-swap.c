@@ -2,19 +2,18 @@
 
 /**
  * swap_int- interchanges a and b
- * @a:checked
- * @b:checked
+ * @a: input 1
+ * @b: input 2
  * Return: nothing
  */
 
 void swap_int(int *a, int *b);
 {
-	int swap
+	int swap;
 
 		swap = *a;
 
 	*a = *b;
 
 	*b = swap;
-	_putchar('\n');
 }
