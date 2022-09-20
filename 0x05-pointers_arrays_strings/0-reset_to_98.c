@@ -9,9 +9,7 @@
 
 void reset_to_98(int *n)
 {
-	int *swap;
+	int *n;
 
-	swap = n
-
-	*swap = 98;
+	*n = 98;
 }
