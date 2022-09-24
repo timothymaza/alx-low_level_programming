@@ -14,13 +14,13 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int a, 
 	    /**
-	     * iterate throught src array
+	     * iterate through src array 
 	     * where if there is no null byte
-	     * among the first n bytes of source 
-	     * the string placed in dest will be
+	     * among the first n bytes of source
+	     * the string placed in dest will not be 
 	     * null terminated
 	     */
-	    for (i = 0; a < n && src[a] != '\0'; a++)
+	    for (a = 0; i < n && src[a] != '\0'; a++)
 		    dest[a] = src[a];
 	/**
 	 * if the length of source is less than n
