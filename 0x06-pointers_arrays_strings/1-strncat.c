@@ -5,7 +5,7 @@
  * @dest: pointer to the destination array
  * @src: the string to be apprehended
  * @n: maximum number of characters to be apprehended.
- * Return: concatenates string
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -23,7 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (*(src + i) != *(src + n))
 	{
 		dest[j] = src[i];
-		I++;
+		i++;
 		j++;
 	}
 	dest[j] = '\0';
