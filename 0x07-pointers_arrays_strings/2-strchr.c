@@ -7,17 +7,20 @@
  * @s: target parameter
  * @c: character parameter
  *
- * Return: char *
+ * Return: pointer to @s or NULL if not found
  */
+
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; s[i] >= '\0'  ; i++)
+	while (*s)
 	{
-		if (s[i] == c)
-			return (s + i);
+		s++;
+
+		if (*s == c)
+		{
+			return (s);
+		}
 	}
 
-	return (NULL);
+	return (0);
 }
